@@ -1,0 +1,83 @@
+  /* style cho css cho cuộn chữ cái */
+  .top-bar-left {
+      overflow: hidden;
+      white-space: nowrap;
+      /*giúp không bị xuống dòng*/
+  }
+
+  .scroll-text {
+      display: inline-block;
+      animation: marquee 15s linear infinite;
+      margin-right: 50px;
+  }
+
+  @keyframes marquee {
+      from {
+          transform: translate(100%);
+      }
+
+      to {
+          transform: translate(-100%);
+      }
+  }
+
+  /* style css cho toàn bộ top bar */
+  .top-bar {
+      justify-content: space-between;
+  }
+
+  body {
+      color: aliceblue;
+      background-color: azure;
+      font-family: 'Arial', sans-serif;
+
+  }
+
+  .navbar a,
+  .navbar .nav-link,
+  .navbar .navbar-brand,
+  .navbar span a {
+      color: aliceblue !important;
+  }
+
+  @media(max-width:1200px) {
+      .top-bar-right {
+          display: none;
+      }
+  }
+
+  /* css cho offcanvas */
+  .offcanvas-body .nav-link {
+      border-bottom: 1px solid #ddd;
+      /* Gạch dưới nhẹ */
+  }
+  /* css cho banner */
+  .banner1{
+    position:relative;
+
+  }
+  .banner{
+    position:absolute;
+    z-index: 1;
+    top:30%;
+    margin-left: 150px;
+  }
+  .search-bar{
+    background: rgba(255,255,255,0.2);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  }
+  @media (max-width: 768px) {
+  .banner {
+    top: 20%;
+    left: 5%;
+    margin-left: 0;
+    width: 90%;
+  }
+  .group  {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}
+  
