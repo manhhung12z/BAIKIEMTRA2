@@ -8,7 +8,5 @@ class RoomController{
     {
         echo __METHOD__;
     }
-
-
 } 
 ?>
